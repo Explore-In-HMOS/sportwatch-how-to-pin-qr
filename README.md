@@ -11,8 +11,8 @@ Designed for ultra-fast short codes (pairing tokens / door pins / POS quick-auth
 ### Preview Screenshots
 
 <div>
-    <img src="screenshots/output_1.PNG" width="25%"/>
-    <img src="screenshots/output_2.PNG" width="25%"/>
+    <img src="screenshots/output_1.png" width="25%"/>
+    <img src="screenshots/output_2.png" width="25%"/>
 </div>
 
 ---
