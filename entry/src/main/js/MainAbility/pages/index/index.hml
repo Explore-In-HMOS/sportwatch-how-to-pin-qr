@@ -1,0 +1,39 @@
+<div class="container">
+
+    <text class="title">PIN → QR</text>
+
+    <text class="pin">{{ codeDisplay }}</text>
+
+    <div class="qrWrap">
+        <qrcode
+                value="{{ 'PIN:' + codeRaw }}"
+                class="qrCode"
+                style="opacity: {{ codeRaw.length === 4 ? 1 : 0 }}">
+        </qrcode>
+    </div>
+
+    <div class="row">
+        <div class="btn" onclick="press1"><text class="btnText">1</text></div>
+        <div class="btn" onclick="press2"><text class="btnText">2</text></div>
+        <div class="btn" onclick="press3"><text class="btnText">3</text></div>
+    </div>
+
+    <div class="row">
+        <div class="btn" onclick="press4"><text class="btnText">4</text></div>
+        <div class="btn" onclick="press5"><text class="btnText">5</text></div>
+        <div class="btn" onclick="press6"><text class="btnText">6</text></div>
+    </div>
+
+    <div class="row">
+        <div class="btn" onclick="press7"><text class="btnText">7</text></div>
+        <div class="btn" onclick="press8"><text class="btnText">8</text></div>
+        <div class="btn" onclick="press9"><text class="btnText">9</text></div>
+    </div>
+
+    <div class="row">
+        <div class="btn small warn" onclick="remove"><text class="btnText">Del</text></div>
+        <div class="btn" onclick="press0"><text class="btnText">0</text></div>
+        <div class="btn small" onclick="reset"><text class="btnText">Reset</text></div>
+    </div>
+
+</div>
