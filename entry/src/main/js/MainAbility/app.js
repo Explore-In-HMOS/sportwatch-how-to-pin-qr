@@ -1,9 +1,9 @@
 export default {
     data: {
-        qr_value: 'https://developer.huawei.com',
-        qr_col: '#000000',
-        qr_bcol: '#ffffff',
-        qr_size: 200,
+        qrValue: 'https://developer.huawei.com',
+        qrCol: '#000000',
+        qrBcol: '#ffffff',
+        qrSize: 200
     },
 
     onCreate() {
@@ -16,29 +16,33 @@ export default {
 
     // QR interactions
     onQrClick() {
-        this.qr_value = this.qr_value.includes('Hello')
+        this.qrValue = this.qrValue.includes('Hello')
             ? 'QR: HarmonyOS Rocks!'
             : 'QR: Hello Wearable!';
     },
 
     onQrLongPress() {
-        this.qr_col = (this.qr_col === '#000000') ? '#1e90ff' : '#000000';
-        this.qr_bcol = (this.qr_bcol === '#ffffff') ? '#f0f8ff' : '#ffffff';
+        this.qrCol = (this.qrCol === '#000000') ? '#1e90ff' : '#000000';
+        this.qrBcol = (this.qrBcol === '#ffffff') ? '#f0f8ff' : '#ffffff';
     },
 
     // resize buttons
     makeBigger() {
-        if (this.qr_size < 300) this.qr_size += 20;
+        if (this.qrSize < 300) {
+            this.qrSize += 20;
+        }
     },
     makeSmaller() {
-        if (this.qr_size > 200) this.qr_size -= 20;
+        if (this.qrSize > 200) {
+            this.qrSize -= 20;
+        }
     },
 
     // color toggles
     changeColor() {
-        this.qr_col = (this.qr_col === '#1e90ff') ? '#fa8072' : '#1e90ff';
+        this.qrCol = (this.qrCcol === '#1e90ff') ? '#fa8072' : '#1e90ff';
     },
     changeBackgroundColor() {
-        this.qr_bcol = (this.qr_bcol === '#ffffff') ? '#ffffe0' : '#ffffff';
+        this.qrBcol = (this.qrBcol === '#ffffff') ? '#ffffe0' : '#ffffff';
     }
 }

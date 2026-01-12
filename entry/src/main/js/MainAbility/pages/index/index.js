@@ -2,9 +2,9 @@ export default {
     data: {
         codeRaw: '',
         codeDisplay: '— — — —',
-        qr_col: '#000000',
-        qr_bcol: '#ffffff',
-        qr_size: 160
+        qrCol: '#000000',
+        qrBcol: '#ffffff',
+        qrSize: 160
     },
 
     updateDisplay() {
@@ -16,7 +16,9 @@ export default {
     },
 
     appendDigit(d) {
-        if (this.codeRaw.length >= 4) return;
+        if (this.codeRaw.length >= 4) {
+            return;
+        }
         this.codeRaw = this.codeRaw + d;
         this.updateDisplay();
     },
@@ -33,7 +35,9 @@ export default {
     press9() { this.appendDigit('9'); },
 
     remove() {
-        if (this.codeRaw.length === 0) return;
+        if (this.codeRaw.length === 0) {
+            return;
+        }
         this.codeRaw = this.codeRaw.slice(0, -1);
         this.updateDisplay();
     },
