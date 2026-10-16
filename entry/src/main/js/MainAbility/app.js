@@ -40,7 +40,7 @@ export default {
 
     // color toggles
     changeColor() {
-        this.qrCol = (this.qrCcol === '#1e90ff') ? '#fa8072' : '#1e90ff';
+        this.qrCol = (this.qrCol === '#1e90ff') ? '#fa8072' : '#1e90ff';
     },
     changeBackgroundColor() {
         this.qrBcol = (this.qrBcol === '#ffffff') ? '#ffffe0' : '#ffffff';
