@@ -23,7 +23,7 @@ Designed for ultra-fast short codes (pairing tokens / door pins / POS quick-auth
 
 ## Stack (Languages, Frameworks, Tools, Libraries, 3rd Party)
 - **Languages**: HML, CSS, JavaScript
-- **Frameworks/Tools**: HarmonyOS Lite Wearable (JS), DevEco Studio
+- **Frameworks/Tools**: HarmonyOS SportWatch (JS), DevEco Studio
 - **3rd Party**: Built-in `<qrcode>` component for QR rendering
 
 ## Required Permissions
@@ -59,7 +59,7 @@ entry/src/main/pages/
 
 # Technical Constraints
 - Platform Scope
-  - Specifically built for HarmonyOS Lite Wearable JS pages; not compatible with ArkTS. Features beyond Lite JS are excluded from this scope.
+  - Specifically built for HarmonyOS SportWatch JS pages; not compatible with ArkTS. Features beyond Lite JS are excluded from this scope.
 
 - Input Validation
   - Only accepts 4-digit PINs to generate QR codes. Longer or invalid inputs are not supported.
